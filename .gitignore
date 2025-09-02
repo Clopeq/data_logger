@@ -2,3 +2,4 @@ output/
 __pychache__/
 .venv/
 .python-version
+uv.lock
