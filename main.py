@@ -1,20 +1,21 @@
 
 from time import time
-import sys
 from app import App
+# from button import TareButton
 
-def foo():
-    print("foo")
+
 
 def main(): # UI consumer thread
 
-
     # init
     app = App()
+    # tare_button = TareButton(app.get_ui_element("tareButton"))
 
-    tare_button = app.get_ui_element("tareButton")
+    # tare_button = app.get_ui_element("tareButton")
+    # app.set_on_click("tareButton", func)
+    # app.set_label("")
 
-    tare_button.on_click(func, args)
+    # tare_button.on_click(func, args)
     
     app.exec()
 
