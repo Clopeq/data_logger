@@ -1,4 +1,4 @@
-output
-__pychache__
-.venv
-.python-version
+output/
+# __pychache__/
+# .venv/
+# .python-version
