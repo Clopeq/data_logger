@@ -4,6 +4,7 @@
 
 
 # Adding new UI elements
+you have to add elements manually to the constants.py file, otherwise they will not be accesible from within the code. This is how to properly add new ui elements:
 1. Open **QtDesigner** app.
 2. Add the UI element of your desire
 3. Name the UI element in the **"objectName"** field. (You will need this name later)

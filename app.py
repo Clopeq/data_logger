@@ -43,7 +43,8 @@ class App():
             if UI_ELEMENTS[element] == QPushButton:
                 qbutton = ui_elements[element]
                 onclick = BUTTON_ONCLICK[element]
-                buttons[element] = Button(qbutton, onclick, ui_elements, args=(qbutton, ui_elements))
+                args = (qbutton, ui_elements)
+                buttons[element] = Button(qbutton, onclick, ui_elements, args)
 
         return buttons
 

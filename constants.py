@@ -2,7 +2,7 @@ from PySide6.QtWidgets import QPushButton, QLabel, QLineEdit
 from buttons_onclick import *
 
 UI_FILE = "app.ui"
-UI_REFRESHRATE = 12
+UI_REFRESHRATE = 8
 UI_ELEMENTS = {
     "tareButton": QPushButton,
     "titleLabel": QLabel,
