@@ -3,13 +3,18 @@ from time import time
 import sys
 from app import App
 
+def foo():
+    print("foo")
+
 def main(): # UI consumer thread
 
 
     # init
     app = App()
 
-    print(app.get_ui_element("tareButton"))
+    tare_button = app.get_ui_element("tareButton")
+
+    tare_button.on_click(func, args)
     
     app.exec()
 
