@@ -8,13 +8,15 @@ def main(): # UI consumer thread
 
     # init
     app = App()
+
+    print(app.get_ui_element("tareButton"))
     
     app.exec()
 
 
     # loop
     t = time()
-    while time()-t < 5:
+    while time()-t < 3:
         print(time()-t)
         t2 = time()
         while time()-t2 < 1:

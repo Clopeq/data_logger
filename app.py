@@ -14,7 +14,7 @@ class App():
         self.__window = self.__load_ui(UI_FILE)
         self.__window.show()
 
-        self.ui_elements = self.__load_ui_elements(self.__window)
+        self.__ui_elements = self.__load_ui_elements(self.__window)
 
     
     def exec(self):
@@ -41,6 +41,13 @@ class App():
             button.clicked.connect(func)
         else:
             raise Exception(f"Error: '{button}' not found in the TUI")
+        
+    def get_ui_element(self, element):
+        if element in self.__ui_elements:
+            ui_element = (self.__ui_elements[element], element)
+        else:
+            raise ValueError(f"App.get_ui_element() the UI element has not been found: {element}")
+        return ui_element
         
     def __load_ui_elements(self, window):
         ui_elements = {}
