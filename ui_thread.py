@@ -28,11 +28,6 @@ def ui_loop(ui, ui_refreshrate, ui_que: Queue, cmd_out: Queue, cmd_in: Queue):
             live_view(ui_que, ui["titleLabel"])
 
 
-        
-
-    
-
-
     # Do something with the data
 
     # update UI
