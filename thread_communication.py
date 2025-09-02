@@ -20,3 +20,14 @@ def send_cmd(command, receiver):
         raise ValueError(f"Receiver has not been found: {receiver}")
     
     que_dict[receiver].put(command)
+
+def receive_que(que: Queue):
+    if que.empty() == False:
+        try:
+            cmd = que.get(timeout=0.05)
+        except:
+            cmd = None
+    else:
+        cmd = None
+
+    return cmd
